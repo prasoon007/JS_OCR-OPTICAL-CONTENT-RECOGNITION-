@@ -3,13 +3,89 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>img to pdf</title>
-</head>
+    <title>JS OCR</title>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+        <style>
+            footer {
+                margin-top: 150px;
+            }
+        </style>
+    </head>
 <body>
-    <h2>IMG TO PDF CONVERTER</h2>
-    <form action="/upload" method="POST" enctype="multipart/form-data">
-        <input type="file" name="avatar">
-        <button type="submit">CONVERT</button>
-    </form>
+        <header>
+                <nav class="nav-wrapper">
+                  <div class="container">
+                    <a href="#" class="brand-logo">JS OCR</a>
+                    <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+                      <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                      <li><a href="#photos">Photo's</a></li>
+                      <li><a href="#services">Services</a></li>
+                      <li><a href="#contact">Contact</a></li>
+                      <li><a href="#" class="tooltipped btn-floating btn-small" data-tooltip="Instagram">
+                        <i class="fab fa-instagram"></i>
+                      </a></li>
+                      <li><a href="#" class="tooltipped btn-floating btn-small" data-tooltip="Facebook">
+                        <i class="fab fa-facebook"></i>
+                      </a></li>
+                      <li><a href="#" class="tooltipped btn-floating btn-small" data-tooltip="Twitter">
+                        <i class="fab fa-twitter"></i>
+                      </a></li>
+                    </ul>
+                    <ul class="sidenav grey lighten-2" id="mobile-menu">
+                      <li><a href="#">Photo's</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Contact</a></li>
+                    </ul> 
+                  </div>
+                </nav>
+              </header>
+    <div class="container text-align center-align">
+         <h2>IMG TO PDF CONVERTER</h2>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+            <div class="input-field">
+                <input type="file" name="avatar">
+            </div>
+            <div class="input-field">
+                <button type="submit" class="btn">CONVERT</button>
+            </div>
+        </form>
+    </div>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+<footer class="page-footer grey darken-3">
+        <div class="container">
+          <div class="row">
+            <div class="col s12 l6">
+              <h5>About Me</h5>
+              <p>fdskukgagskygadhafefglkagfagkafyaewfgkyagfykua</p>
+              <p>fdskukgagskygadhafefglkagfagkafyaewfgkyagfykua</p>
+            </div>
+            <div class="col s12 l4 offset-l2">
+                <h5>Connect</h5>
+                <ul>
+                  <li><a href="#" class="grey-text text-lighten-3">Facebook</a></li>
+                  <li><a href="#" class="grey-text text-lighten-3">Twitter</a></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+          <div class="container center-align">
+            &copy; 2019 JS OCR
+          </div>
+        </div>
+      </footer>
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+      <script>
+          $(document).ready(function(){
+          $('.sidenav').sidenav();
+        });
+      </script>
 </body>
 </html>
