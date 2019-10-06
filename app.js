@@ -48,7 +48,6 @@ app.get('/download', (req, res) => {
     res.download(file);
 })
 
-var port = 3000 || process.env.PORT;
-app.listen(port, () => {
+app.listen(process.env.PORT, () => {
     console.log("server has started!!!!");
 })
